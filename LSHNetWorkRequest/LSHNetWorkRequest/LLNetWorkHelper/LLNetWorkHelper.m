@@ -93,22 +93,7 @@
 
 }
 
-//携带body POST请求
-+(LLURLSessionTask *)POST:(NSString *)URL Parameters:(NSDictionary *)ParametersDic Body:(id)body SuccessCallBack:(HttpRequestSuccessCallBack)SuccessCallBack FailCallBack:(HttpRequestFailCallBack)FailCallBack{
-    AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
-    if ([body isKindOfClass:[NSDictionary class]]|| [body isKindOfClass:[NSMutableDictionary class]]) {
-        //body是字典
-        
-        
-    }else if ([body isKindOfClass:[NSString class]]){
-    
-    
-    }
-    
-    
-    return 0;
 
-}
 
 
 

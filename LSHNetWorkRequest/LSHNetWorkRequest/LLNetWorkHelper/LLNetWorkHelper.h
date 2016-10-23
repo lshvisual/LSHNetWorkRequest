@@ -106,20 +106,6 @@ typedef NSURLSessionTask LLURLSessionTask;
 +(LLURLSessionTask *)POST:(NSString *)URL Parameters:(NSDictionary *)ParametersDic responseCache:(HttpRequestCache)responseCache SuccessCallBack:(HttpRequestSuccessCallBack )SuccessCallBack FailCallBack:(HttpRequestFailCallBack )FailCallBack;
 
 
-/**
- *  @brief POST请求 携带Body
- *
- *  @param URL             请求地址
- *  @param ParametersDic   请求参数
- *  @param bodyString      请求body
- *  @param responseCache   缓存数据回调
- *  @param SuccessCallBack 请求成功回调
- *  @param FailCallBack    请求失败回调
- *
- *  @return 返回的对象可取消请求,调用cancle方法
- */
-+(LLURLSessionTask *)POST:(NSString *)URL Parameters:(NSDictionary *)ParametersDic Body:(id)body SuccessCallBack:(HttpRequestSuccessCallBack )SuccessCallBack FailCallBack:(HttpRequestFailCallBack )FailCallBack;
-
 
 
 
